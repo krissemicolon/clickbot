@@ -11,17 +11,13 @@ void click(int button, int delay, int duration) {
 
     if(duration == (unsigned long)NULL) {
         for(;;) {
-            /* xdo_click_window(x, CURRENTWINDOW, button); */
-            xdo_mouse_down(x, CURRENTWINDOW, button);
-            xdo_mouse_up(x, CURRENTWINDOW, button);
+            xdo_click_window(x, CURRENTWINDOW, button);
             msleep(delay);
         }
     } 
     else{
         for(int i = 0; i < duration; i++) {
-            /* xdo_click_window(x, CURRENTWINDOW, button); */
-            xdo_mouse_down(x, CURRENTWINDOW, button);
-            xdo_mouse_up(x, CURRENTWINDOW, button);
+            xdo_click_window(x, CURRENTWINDOW, button);
             msleep(delay);
         }
     }
