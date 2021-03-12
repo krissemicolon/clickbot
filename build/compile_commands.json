@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/home/krissemicolon/Projects/clickbot/build",
+    "command": "ccache cc -Iclickbot.p -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -O3 -march=native '-DVERSION=\"1.0.0\"' -MD -MQ clickbot.p/src_main.c.o -MF clickbot.p/src_main.c.o.d -o clickbot.p/src_main.c.o -c ../src/main.c",
+    "file": "../src/main.c",
+    "output": "clickbot.p/src_main.c.o"
+  },
+  {
+    "directory": "/home/krissemicolon/Projects/clickbot/build",
+    "command": "ccache cc -Iclickbot.p -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -O3 -march=native '-DVERSION=\"1.0.0\"' -MD -MQ clickbot.p/src_cli.c.o -MF clickbot.p/src_cli.c.o.d -o clickbot.p/src_cli.c.o -c ../src/cli.c",
+    "file": "../src/cli.c",
+    "output": "clickbot.p/src_cli.c.o"
+  }
+]
