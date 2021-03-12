@@ -12,13 +12,19 @@ project(
     ]
 )
 
-cflags = '-march=native'
+cflags = '-Wall'
 macros = '-DVERSION="1.0.0"'
+compiler = meson.get_compiler('c')
+
+xdo = compiler.find_library('xdo', dirs: ['/usr/lib64'])
 
 executable( 
-    'clickbot',
+    meson.project_name(),
     'src/main.c',
     'src/cli.c',
-    c_args: [cflags, macros]
+    'src/click.c',
+    'src/sleep.c',
+    c_args: [cflags, macros],
+    dependencies: xdo
 )
 
