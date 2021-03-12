@@ -5,9 +5,10 @@
 |    |  | (__  | | | | |(__ |    <| | |_) |  (_) | |_ 
 \____/   \___| |_| |_| \___|| _|\_\ |_.__/  \___/ \__|
 
-Simple to use AutoClicker designed for Linux
+Simple to use AutoClicker designed for Linux X11
 
 ------------------------------------------------
 |   Interface:                      CLI        |
 |   C Version:                      C99        |
+|   Build sys:                      Meson      |
 ------------------------------------------------
