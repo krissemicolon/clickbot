@@ -6,17 +6,17 @@
 #include "include/sleep.h"
 #include "include/click.h"
 
-void click(int button, int delay, int duration) {
+void click(int button, int delay, int amount) {
     xdo_t * x = xdo_new(NULL);
 
-    if(duration == (unsigned long)NULL) {
+    if(amount == NULL) {
         for(;;) {
             xdo_click_window(x, CURRENTWINDOW, button);
             msleep(delay);
         }
     } 
     else{
-        for(int i = 0; i < duration; i++) {
+        for(int i = 0; i < amount; i++) {
             xdo_click_window(x, CURRENTWINDOW, button);
             msleep(delay);
         }

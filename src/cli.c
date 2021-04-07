@@ -32,6 +32,7 @@ void print_help() {
         "Options:\n"
         "-d              Set the delay between clicking [ms]\n"
         "-b              Set which button to press [left, middle, right]\n"
+        "-a              Set amount of click to simulate [int]\n"
         "-h              Print the help page\n"
         "-v              Print version information\n"
         "Example:\n"

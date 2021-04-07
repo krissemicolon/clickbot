@@ -27,4 +27,3 @@ executable(
     c_args: [cflags, macros],
     dependencies: xdo
 )
-

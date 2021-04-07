@@ -31,22 +31,31 @@ Constants enumparse(char* name) {
 int main(int argc, char **argv) {
     int selectedButton = 1;
     int delay = 100;
+    int amount;
 
     int options;
-    while ((options = getopt(argc, argv, "hvd:b:")) != -1) {
+    while ((options = getopt(argc, argv, "hvb:d:a:")) != -1) {
         switch (options) {
             case 'h':
                 print_help();
+            break;
 
             case 'v':
                 print_version();
-
-            case 'd':
-                delay = atoi(optarg);
+            break;
 
             case 'b':
                 selectedButton = enumparse(optarg);
                 ++selectedButton;
+            break;
+
+            case 'd':
+                delay = atoi(optarg);
+            break;
+
+            case 'a':
+                amount = atoi(optarg);
+            break;
         }
     }
 
@@ -60,7 +69,7 @@ int main(int argc, char **argv) {
         exit(2);
     }
 
-    click(selectedButton, delay, (unsigned long)NULL);
+    click(selectedButton, delay, amount);
 
     return 0;
 }
