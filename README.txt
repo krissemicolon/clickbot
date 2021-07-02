@@ -12,10 +12,3 @@ Simple to use AutoClicker designed for Linux X11
 |   C Version:                      C99        |
 |   Build sys:                      Meson      |
 ------------------------------------------------
-
-       /
-     __|_
-    |____|
-    |    |
-    |    |
-    \____/
