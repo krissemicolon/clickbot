@@ -11,4 +11,5 @@ Simple to use AutoClicker designed for Linux X11
 |   Interface:                      CLI        |
 |   C Version:                      C99        |
 |   Build sys:                      Meson      |
+|   LOC Count:                      246        |
 ------------------------------------------------
