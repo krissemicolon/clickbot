@@ -30,7 +30,7 @@ void print_help() {
     printf("\n");
     printf(
         "Options:\n"
-        "-d              Set the delay between clicking [ms]\n"
+        "-d              Set the delay between clicks [ms]\n"
         "-b              Set which button to press [left, middle, right]\n"
         "-a              Set amount of click to simulate [int]\n"
         "-h              Print the help page\n"
